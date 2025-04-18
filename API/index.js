@@ -7,12 +7,12 @@
 // }
 
 // data()
-async function data() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+// async function data() {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
-    const jsonData = await response.json(); // Await here is important
+//     const jsonData = await response.json(); // Await here is important
 
-    console.log(jsonData); // Optional: log the data to see the result
-}
+//     console.log(jsonData); // Optional: log the data to see the result
+// }
 
-data();
+// data();
