@@ -116,7 +116,7 @@
     
 // }
 
-const coding = ['js', "rb", "py", "java", "cpp"];
+// const coding = ['js', "rb", "py", "java", "cpp"];
 
 // coding.forEach( function (itme) {
 //     console.log(itme);    
@@ -136,21 +136,21 @@ const coding = ['js', "rb", "py", "java", "cpp"];
 //     console.log(item, index, arr);    
 // });
 
-const myCoding = [
-    {
-        languageName: "javascript",
-        languageFileName: "js"
-    },
-    {
-        languageName: "java",
-        languageFileName: "java"
-    },
-    {
-        languageName: "python",
-        languageFileName: "py"
-    },
-]
+// const myCoding = [
+//     {
+//         languageName: "javascript",
+//         languageFileName: "js"
+//     },
+//     {
+//         languageName: "java",
+//         languageFileName: "java"
+//     },
+//     {
+//         languageName: "python",
+//         languageFileName: "py"
+//     },
+// ]
 
-myCoding.forEach( (item) => {
-    console.log(item.languageFileName);
-});
+// myCoding.forEach( (item) => {
+//     console.log(item.languageFileName);
+// });
