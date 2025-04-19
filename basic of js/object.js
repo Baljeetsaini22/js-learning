@@ -89,7 +89,7 @@
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-//-----------------------------------------
+////!-----------------------------------------
 
 // const course = {
 //     courseName: "Js in hindi",
@@ -105,7 +105,7 @@
     }                           // deStructuring 
 navbar(company = "hitesh")*/ 
 
-//================JSON API================= 
+////!================JSON API================= 
 
 // {
 //     "name": "baljeet",
