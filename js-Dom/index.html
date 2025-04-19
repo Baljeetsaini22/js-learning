@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Object Model</title>
+  <meta charset="UTF-8">
+  <title>Biodata Form</title>
 </head>
 <body>
-    
-    <script src="./Dom.js"></script>
+  <h1>Biodata Form</h1>
+
+  <form id="biodataForm">
+    <input type="text" name="id" placeholder="ID" required><br>
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="number" name="age" placeholder="Age" required><br>
+    <input type="text" name="bloodGroup" placeholder="Blood Group" required><br>
+    <input type="text" name="address" placeholder="Address" required><br>
+    <input type="text" name="city" placeholder="City" required><br>
+    <input type="text" name="state" placeholder="State" required><br>
+    <input type="text" name="phoneNumber" placeholder="Phone Number" required><br>
+    <input type="text" name="telephoneNumber" placeholder="Telephone Number" required><br>
+    <input type="text" name="pincode" placeholder="Pincode" required><br>
+    <input type="text" name="country" placeholder="Country" required><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script>
+    function bioDataFactory(id, name, age, bloodGroup, address, city, state, phoneNumber, telephoneNumber, pincode, country) {
+      return {
+        id,
+        name,
+        age,
+        bloodGroup,
+        address,
+        city,
+        state,
+        phoneNumber,
+        telephoneNumber,
+        pincode,
+        country
+      };
+    }
+
+    document.getElementById("biodataForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      const biodata = bioDataFactory(
+        formData.get("id"),
+        formData.get("name"),
+        formData.get("age"),
+        formData.get("bloodGroup"),
+        formData.get("address"),
+        formData.get("city"),
+        formData.get("state"),
+        formData.get("phoneNumber"),
+        formData.get("telephoneNumber"),
+        formData.get("pincode"),
+        formData.get("country")
+      );
+
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = `
+        <h2>Biodata:</h2>
+        <pre>${JSON.stringify(biodata, null, 2)}</pre>
+      `;
+    });
+  </script>
 </body>
 </html>
