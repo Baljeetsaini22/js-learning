@@ -57,7 +57,7 @@
 // }
 
 // console.log(loginUserMessage("Baljeet"));
-
+//!======================================================
 // function calculateCartPrice(val1, val2, ...num1) {
 //     return num1
 // }
@@ -78,7 +78,7 @@
 //     username: "vikas",
 //     price: 399
 // })
-
+//!=================================================
 // const myNewArray = [200, 400, 100, 600]
 
 // function returnSecondValue(getArray) {

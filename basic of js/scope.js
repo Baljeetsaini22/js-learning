@@ -34,20 +34,19 @@ function one() {
     
 }
 // one ()
-
+//!===================================================
 if (true) {
     const username = "baljeet"
     if (username === "baljeet") {
         const website = " youtube"
         // console.log (username + website);
     }
-    // console.log(website);
-    
+    // console.log(website);    
 }
 // console.log(username);
 
 //!=============interesting====================
-// addone(5)
+// console.log(addone(5))
 // function addone(num) {
 //     return num + 1    
 // }
@@ -56,4 +55,4 @@ if (true) {
 //     return num + 2
 // }
 // addTow(5)
-// console.log(addone(5));
+// console.log(addTwo(5));
