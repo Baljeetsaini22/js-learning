@@ -1,3 +1,5 @@
+// "use strict"
+
 // //? <--------=============| Task |=================---------->
 
 // //! Add to numbers using function 
@@ -93,3 +95,101 @@
 // };
 // const sorted = arr.sort((a , b) => a - b)
 // console.log(sorted.slice(-3))
+
+
+// const myArrow  = () => {
+//     let a = "hello"
+//     return console.log(this.a);
+    
+// }
+// console.log(myArrow());
+// (function hello () {
+//     let a = 23;
+//     console.log(a);
+    
+// })
+// ()
+
+// function add() {
+//     let b = "hellow"
+//     console.log(this.b);
+    
+// }
+
+// add()
+
+
+// const obj = {
+//     name: "baljit",
+//     role: "web dev",
+//     func:  () => {
+//         console.log(this.name);
+        
+//     }
+// }
+// console.log(obj.func());
+
+// function add () {
+//     let a = 23;
+//     "use stirct"
+//     console.log(this.a);
+    
+// }
+// add
+
+
+// function baljit() {
+//     let a = 45;
+//   let b = () => {
+//    console.log(this.a)
+   
+//   }
+//   console.log(b());
+  
+// }
+// baljit()
+
+// const obj = {
+//     name: "hari",
+//     func: function baljeet() {
+//         const arrow = () => {
+//             console.log(this.name);
+            
+//         }
+//         arrow()        
+//     }
+// }
+// console.log(obj.func());
+
+
+// console.log(this);
+// console.log(window);
+
+// console.log(window);
+const obj = {
+    name: "baljit",
+    func3: function () {
+    
+        const a = () => {
+          return  this.name;    
+        }
+        console.log(a())
+    }
+} 
+const obj2 = {
+    name: "hello"
+}
+
+console.log(obj.func3.call(obj2));
+// apply 
+// bind
+
+// obj.call(obj2);
+
+
+
+
+
+
+// const arrow = () =>(  "hello world" )
+// console.log(arrow());
